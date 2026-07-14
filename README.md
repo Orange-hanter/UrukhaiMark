@@ -6,7 +6,7 @@
 
 [![Status](https://img.shields.io/badge/status-planning-blue?style=flat-square)](docs/ROADMAP.md)
 [![Docs](https://img.shields.io/badge/docs-43%20files-green?style=flat-square)](docs/README.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-orange?style=flat-square)](LICENSE)
 [![DataMatrix](https://img.shields.io/badge/format-GS1%20DataMatrix-6c5ce7?style=flat-square)](docs/datamatrix-spec.md)
 
 *ГИС «Электронный знак» · datamark.by · GS1 DataMatrix · «Честный знак» РФ*
@@ -103,7 +103,15 @@ flowchart LR
 
 ## Лицензия
 
-Проект распространяется под лицензией [MIT](LICENSE).
+Проект распространяется под лицензией [CC BY 4.0](LICENSE) (Creative Commons «С указанием авторства»).
+
+Материалы можно свободно использовать, изменять и распространять — в том числе в коммерческих целях — при **обязательном указании авторства**:
+
+```
+UrukhaiMark © 2026 Orange-hanter
+https://github.com/Orange-hanter/UrukhaiMark
+Лицензия: CC BY 4.0
+```
 
 ---
 
