@@ -1,7 +1,7 @@
 # Документация UrukhaiMark
 
 > Маркировка товаров через ГИС «Электронный знак» (Беларусь) для продажи в РБ и экспорта в РФ.
-> Обновлено: 11.07.2026
+> Обновлено: 14.07.2026
 
 ## Быстрый старт
 
@@ -30,6 +30,17 @@
 - [processes/registration.md](processes/registration.md) — регистрация GS1, ePASS, «Электронный знак»
 - [processes/export-rf-cosmetics.md](processes/export-rf-cosmetics.md) — экспорт освежителей в РФ
 - [processes/domestic-rb-beer.md](processes/domestic-rb-beer.md) — пиво в РБ (УКЗ)
+
+### Технология нанесения кодов
+
+- [technology/README.md](technology/README.md) — индекс обзорных материалов
+- [technology/industrial-marking.md](technology/industrial-marking.md) — **промышленное нанесение**: CIJ, лазер, VDP, print-and-apply, PLC
+- [technology/laser-engraving.md](technology/laser-engraving.md) — **лазерная гравировка** DataMatrix на металле и полимерах
+- [technology/overview.md](technology/overview.md) — «QR» vs DataMatrix, виды маркировки, жизненный цикл
+- [technology/application-methods.md](technology/application-methods.md) — пилотные наклейки, УКЗ
+- [technology/packaging-carriers.md](technology/packaging-carriers.md) — размещение на аэрозолях, флаконах, коробах
+- [technology/equipment.md](technology/equipment.md) — принтеры, сканеры, верификаторы
+- [technology/quality-control.md](technology/quality-control.md) — ISO 15415, приёмка партии, брак
 
 ### Техническая реализация
 

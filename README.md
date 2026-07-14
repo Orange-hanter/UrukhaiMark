@@ -5,7 +5,7 @@
 **Маркировка товаров из Беларуси — от заказа кодов до экспорта в РФ**
 
 [![Status](https://img.shields.io/badge/status-planning-blue?style=flat-square)](docs/ROADMAP.md)
-[![Docs](https://img.shields.io/badge/docs-43%20files-green?style=flat-square)](docs/README.md)
+[![Docs](https://img.shields.io/badge/docs-49%20files-green?style=flat-square)](docs/README.md)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-orange?style=flat-square)](LICENSE)
 [![DataMatrix](https://img.shields.io/badge/format-GS1%20DataMatrix-6c5ce7?style=flat-square)](docs/datamatrix-spec.md)
 
@@ -73,6 +73,7 @@ flowchart LR
 | **Планирование** | [ROADMAP](docs/ROADMAP.md) · [Мастер-план](docs/plan.md) · [Открытые вопросы](docs/open-questions.md) |
 | **Предметная область** | [Глоссарий](docs/glossary.md) · [Нормативная база](docs/regulatory.md) · [Матрица SKU](docs/product-matrix.md) |
 | **Процессы** | [Регистрация](docs/processes/registration.md) · [Экспорт РФ](docs/processes/export-rf-cosmetics.md) · [Пиво РБ](docs/processes/domestic-rb-beer.md) |
+| **Нанесение кодов** | [Промышленное inline](docs/technology/industrial-marking.md) · [Упаковка](docs/technology/packaging-carriers.md) · [Оборудование](docs/technology/equipment.md) · [Качество](docs/technology/quality-control.md) |
 | **Техника** | [DataMatrix](docs/datamatrix-spec.md) · [API Cookbook](docs/api/cookbook.md) · [API Reference](docs/api/reference.md) · [Troubleshooting](docs/troubleshooting.md) |
 | **Разработка** | [Архитектура](docs/architecture.md) · [Модель данных](docs/plans/data-model.md) · [План тестирования](docs/plans/testing-plan.md) |
 
