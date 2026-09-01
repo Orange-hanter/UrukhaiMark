@@ -5,7 +5,7 @@
 **Маркировка товаров из Беларуси — от заказа кодов до экспорта в РФ**
 
 [![Status](https://img.shields.io/badge/status-planning-blue?style=flat-square)](docs/planning/roadmap.md)
-[![Docs](https://img.shields.io/badge/docs-49%20files-green?style=flat-square)](docs/README.md)
+[![Docs](https://img.shields.io/badge/docs-Di%C3%A1taxis-green?style=flat-square)](docs/README.md)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-orange?style=flat-square)](LICENSE)
 [![DataMatrix](https://img.shields.io/badge/format-GS1%20DataMatrix-6c5ce7?style=flat-square)](docs/reference/datamatrix-spec.md)
 
@@ -66,7 +66,7 @@ flowchart LR
 
 ## Документация
 
-Полный индекс — в [`docs/README.md`](docs/README.md).
+Полный индекс — в [`docs/README.md`](docs/README.md). Документация организована по [Diátaxis](https://diataxis.fr/). Как вносить изменения — [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 | Раздел | Ключевые документы |
 |--------|-------------------|

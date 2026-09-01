@@ -1,12 +1,25 @@
 # Architecture Decision Records
 
-ADR фиксирует контекст и решение на момент принятия. После `Accepted` разделы
-Context/Decision не переписываются: пересмотр оформляется новым ADR, старый получает
-`Superseded by ADR-NNNN`.
+ADR фиксирует архитектурное решение **снимком на момент принятия**. После
+`Accepted` разделы Context/Decision не переписываются: пересмотр оформляется
+новым ADR, старый получает `Superseded by ADR-NNNN`.
 
 ## Статусы
 
-`Proposed` → `Accepted` → `Deprecated` или `Superseded`.
+```
+Proposed → Accepted → (остаётся Accepted, пока действует)
+                    ↘ Superseded by ADR-XXXX  (если решение пересмотрено)
+                    ↘ Deprecated              (если решение отменено без замены)
+```
+
+**Правило неизменности:** после `Accepted` секции `Context` и `Decision` не
+редактируются задним числом. Если решение нужно изменить:
+
+1. Создайте новый файл `NNNN-short-title.md` со следующим порядковым номером.
+2. Новый ADR получает `Status: Accepted` и ссылается на предыдущий в `Context`.
+3. У старого ADR меняется **только строка Status** → `Superseded by ADR-NNNN`.
+
+То же правило действует для архива планирования: см. [planning/archive/](../planning/archive/).
 
 ## Реестр
 

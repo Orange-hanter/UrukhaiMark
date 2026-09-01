@@ -76,3 +76,7 @@ Input:  KM from API (with \u001d)
 
 - `tests/fixtures/km-samples.txt` — эталонные КМ с GS
 - `tests/datamatrix-golden/` — эталонные PNG для regression
+
+## См. также
+
+- [obsidian-kb.md](obsidian-kb.md) — расширенная база в Obsidian: маркировка EAC/DataMatrix, ГИС «Электронный знак», требования к конвейерной печати, классы ISO/IEC 15415

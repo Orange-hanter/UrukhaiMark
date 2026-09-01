@@ -1,13 +1,15 @@
 # UrukhaiMark documentation map
 
 UrukhaiMark is a greenfield self-hosted product-marking system for Belarusian
-manufacturers and exports to Russia.
+manufacturers and exports to Russia. Documentation is Diátaxis
+(tutorials/how-to/reference/explanation) plus planning/ and decisions/ (ADR).
+Status: documentation only — application code not started.
 
 ## Read first
 
 - docs/explanation/architecture.md — canonical architecture and scope
 - docs/planning/architecture-validation.md — assumptions, NFR, gates
-- docs/planning/roadmap.md — capability delivery order
+- docs/planning/roadmap.md — capability delivery order (slices 0–7)
 - docs/reference/product-matrix.md — SKU routing source of truth
 - docs/reference/datamatrix-spec.md — GS1 DataMatrix invariants
 - docs/reference/api/reference.md — datamark API facts
@@ -26,5 +28,30 @@ manufacturers and exports to Russia.
 
 ## Documentation index
 
-- docs/README.md
-
+- docs/README.md — full navigation
+- docs/tutorials/registration.md
+- docs/how-to/export-rf-cosmetics.md
+- docs/how-to/domestic-rb-beer.md
+- docs/how-to/quality-control.md
+- docs/how-to/operations-runbook.md
+- docs/how-to/deployment.md
+- docs/how-to/troubleshooting.md
+- docs/reference/glossary.md
+- docs/reference/product-matrix.md
+- docs/reference/regulatory.md
+- docs/reference/datamatrix-spec.md
+- docs/reference/data-model.md
+- docs/reference/testing-plan.md
+- docs/reference/api/cookbook.md
+- docs/reference/api/reference.md
+- docs/reference/obsidian-kb.md — related Obsidian notes (external vault)
+- docs/explanation/architecture.md
+- docs/explanation/integration-plan.md
+- docs/explanation/technology/README.md
+- docs/planning/roadmap.md
+- docs/planning/architecture-validation.md
+- docs/planning/work-plan.md
+- docs/planning/open-questions.md
+- docs/planning/governance.md
+- docs/decisions/README.md
+- research/validation/README.md — architecture validation spike logs

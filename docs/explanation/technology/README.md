@@ -29,7 +29,8 @@
 - [datamatrix-spec.md](../../reference/datamatrix-spec.md) — формат GS1 DataMatrix, encoder
 - [glossary.md](../../reference/glossary.md) — КМ, СИ, УКЗ, FNC1, GS
 - [product-matrix.md](../../reference/product-matrix.md) — какой режим для вашего SKU
-- [processes/export-rf-cosmetics.md](../../how-to/export-rf-cosmetics.md) — end-to-end для освежителей
+- [export-rf-cosmetics.md](../../how-to/export-rf-cosmetics.md) — end-to-end для освежителей
+- [obsidian-kb.md](../../reference/obsidian-kb.md) — связанные заметки Obsidian по оборудованию и конвейерной печати
 
 ## Важно
 

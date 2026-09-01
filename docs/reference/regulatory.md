@@ -47,3 +47,7 @@
 ## Презентации оператора
 
 - [Трансграничная торговля (PDF, 26.06.2025)](https://datamark.by/wp-content/uploads/markirovka-tovarov-i-transgranichnaya-torgovlya-26.06.25-1.pdf)
+
+## См. также
+
+- [obsidian-kb.md](obsidian-kb.md) — расширенная база в Obsidian: ТР ТС 004/020/010/037, сертификация АСУ ТП, Ex-сертификация, УТСИ, шаблоны ТУ и обоснования безопасности

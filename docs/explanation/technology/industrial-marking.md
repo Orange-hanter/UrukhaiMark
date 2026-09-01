@@ -397,3 +397,4 @@ flowchart TD
 - [quality-control.md](../../how-to/quality-control.md) — grade ISO 15415
 - [datamatrix-spec.md](../../reference/datamatrix-spec.md) — формат КМ для encoder
 - [architecture.md](../architecture.md) — Line Adapter в UrukhaiMark (план)
+- [obsidian-kb.md](../../reference/obsidian-kb.md) — расширенная база в Obsidian: требования к конвейерной печати, 10 параметров ISO/IEC 15415, компоненты линии, отбраковщик, штрафы

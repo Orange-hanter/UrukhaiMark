@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
-EXTERNAL_PREFIXES = ("http://", "https://", "mailto:", "#")
+EXTERNAL_PREFIXES = ("http://", "https://", "mailto:", "obsidian://", "#")
 
 
 def main() -> int:
