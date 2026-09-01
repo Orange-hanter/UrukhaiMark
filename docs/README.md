@@ -1,55 +1,77 @@
 # Документация UrukhaiMark
 
-> Маркировка товаров через ГИС «Электронный знак» (Беларусь) для продажи в РБ и экспорта в РФ.
-> Обновлено: 14.07.2026
+> Каноническая документация self-hosted-системы маркировки для производителя РБ.
+
+Документация организована по Diátaxis. Этот файл — единственный индекс.
 
 ## Быстрый старт
 
-1. Прочитайте [глоссарий](glossary.md) — термины КМ, СИ, УКЗ, DataMatrix.
-2. Определите режим для вашего SKU в [матрице товаров](product-matrix.md).
-3. Пройдите [чеклист регистрации](processes/registration.md).
-4. Для освежителей → РФ: [процесс экспорта](processes/export-rf-cosmetics.md).
-5. Для разработки: [дорожная карта](ROADMAP.md) + [архитектура](architecture.md).
+1. [Глоссарий](reference/glossary.md).
+2. [Матрица товаров](reference/product-matrix.md).
+3. [Регистрация](tutorials/registration.md).
+4. [Экспорт cosmetics в РФ](how-to/export-rf-cosmetics.md).
+5. [Итоговая архитектура](explanation/architecture.md).
+6. [Дорожная карта](planning/roadmap.md).
 
-## Навигация
+## Tutorials
 
-### Планирование
+| Документ | Назначение |
+|----------|------------|
+| [registration.md](tutorials/registration.md) | GS1, ePASS и «Электронный знак» |
 
-- [ROADMAP.md](ROADMAP.md) — дорожная карта проекта
-- [plan.md](plan.md) — сохранённый мастер-план (полная сводка)
-- [open-questions.md](open-questions.md) — открытые вопросы бизнеса
+## How-to
 
-### Предметная область
+| Документ | Назначение |
+|----------|------------|
+| [export-rf-cosmetics.md](how-to/export-rf-cosmetics.md) | MVP cosmetics → РФ |
+| [domestic-rb-beer.md](how-to/domestic-rb-beer.md) | UKZ для пива РБ |
+| [quality-control.md](how-to/quality-control.md) | Проверка DataMatrix и grade |
+| [operations-runbook.md](how-to/operations-runbook.md) | Ежедневные операции |
+| [deployment.md](how-to/deployment.md) | Self-hosted deployment/rollback |
+| [troubleshooting.md](how-to/troubleshooting.md) | Диагностика ошибок |
 
-- [glossary.md](glossary.md) — термины и сокращения
-- [regulatory.md](regulatory.md) — нормативная база и календари
-- [product-matrix.md](product-matrix.md) — товарные группы и label_type
+## Reference
 
-### Процессы
+| Документ | Источник истины |
+|----------|-----------------|
+| [glossary.md](reference/glossary.md) | Термины |
+| [product-matrix.md](reference/product-matrix.md) | SKU → pipeline |
+| [regulatory.md](reference/regulatory.md) | Нормативная база |
+| [datamatrix-spec.md](reference/datamatrix-spec.md) | GS1 DataMatrix |
+| [data-model.md](reference/data-model.md) | PostgreSQL schema/invariants |
+| [testing-plan.md](reference/testing-plan.md) | QA и acceptance |
+| [api/reference.md](reference/api/reference.md) | API статусы и лимиты |
+| [api/cookbook.md](reference/api/cookbook.md) | HTTP-примеры |
 
-- [processes/registration.md](processes/registration.md) — регистрация GS1, ePASS, «Электронный знак»
-- [processes/export-rf-cosmetics.md](processes/export-rf-cosmetics.md) — экспорт освежителей в РФ
-- [processes/domestic-rb-beer.md](processes/domestic-rb-beer.md) — пиво в РБ (УКЗ)
+## Explanation
 
-### Технология нанесения кодов
+| Документ | Назначение |
+|----------|------------|
+| [architecture.md](explanation/architecture.md) | Каноническая целевая архитектура |
+| [integration-plan.md](explanation/integration-plan.md) | Границы и контракты интеграций |
+| [technology/README.md](explanation/technology/README.md) | Нанесение и оборудование |
 
-- [technology/README.md](technology/README.md) — индекс обзорных материалов
-- [technology/industrial-marking.md](technology/industrial-marking.md) — **промышленное нанесение**: CIJ, лазер, VDP, print-and-apply, PLC
-- [technology/laser-engraving.md](technology/laser-engraving.md) — **лазерная гравировка** DataMatrix на металле и полимерах
-- [technology/overview.md](technology/overview.md) — «QR» vs DataMatrix, виды маркировки, жизненный цикл
-- [technology/application-methods.md](technology/application-methods.md) — пилотные наклейки, УКЗ
-- [technology/packaging-carriers.md](technology/packaging-carriers.md) — размещение на аэрозолях, флаконах, коробах
-- [technology/equipment.md](technology/equipment.md) — принтеры, сканеры, верификаторы
-- [technology/quality-control.md](technology/quality-control.md) — ISO 15415, приёмка партии, брак
+## Planning
 
-### Техническая реализация
+| Документ | Назначение |
+|----------|------------|
+| [roadmap.md](planning/roadmap.md) | Capability slices и gates |
+| [architecture-validation.md](planning/architecture-validation.md) | Предположения, NFR, failure scenarios |
+| [work-plan.md](planning/work-plan.md) | WBS/RACI |
+| [open-questions.md](planning/open-questions.md) | Бизнес-блокеры |
+| [governance.md](planning/governance.md) | Владение документами |
+| [archive/](planning/archive/) | Исторические снимки, не канон |
 
-- [datamatrix-spec.md](datamatrix-spec.md) — GS1 DataMatrix, encoder, сканеры
-- [api/cookbook.md](api/cookbook.md) — примеры HTTP-запросов
-- [api/reference.md](api/reference.md) — endpoints, label_type, лимиты, статусы
-- [architecture.md](architecture.md) — модули UrukhaiMark, стек, Product Router
-- [troubleshooting.md](troubleshooting.md) — частые ошибки
+## Decisions
 
-## Важно
+[ADR index](decisions/README.md) содержит Proposed и Accepted решения.
 
-В разговорной речи коды называют «QR Честного знака», но **стандарт — GS1 DataMatrix**, не QR Code.
+## Статусы scope
+
+- **MVP** — реализуется в Slice 1;
+- **Next** — следующий capability после MVP;
+- **Future** — требует отдельного gate;
+- **Blocked** — отсутствует подтверждённый контракт или бизнес-вход.
+
+В разговорной речи КМ называют «QR Честного знака», но символика — **GS1 DataMatrix**.
+

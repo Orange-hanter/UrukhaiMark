@@ -1,0 +1,30 @@
+# UrukhaiMark documentation map
+
+UrukhaiMark is a greenfield self-hosted product-marking system for Belarusian
+manufacturers and exports to Russia.
+
+## Read first
+
+- docs/explanation/architecture.md — canonical architecture and scope
+- docs/planning/architecture-validation.md — assumptions, NFR, gates
+- docs/planning/roadmap.md — capability delivery order
+- docs/reference/product-matrix.md — SKU routing source of truth
+- docs/reference/datamatrix-spec.md — GS1 DataMatrix invariants
+- docs/reference/api/reference.md — datamark API facts
+- docs/explanation/integration-plan.md — integration boundaries
+- docs/reference/data-model.md — target data model
+- docs/decisions/README.md — architecture decisions
+
+## Critical invariants
+
+- GS1 DataMatrix, not QR.
+- Preserve GS byte 0x1D exactly; never route KM through CSV/Excel.
+- MVP cosmetics/RF uses datamark label_type=7 and indirect transfer to CRPT.
+- addMark precedes addManufacture; shipment follows accepted prerequisites.
+- Local production state, provider state, document state and package state are separate.
+- PostgreSQL is the plant system of record; modular monolith first, edge only after gate.
+
+## Documentation index
+
+- docs/README.md
+
