@@ -40,4 +40,3 @@
 - [ ] Провести физические spikes по [validation reports](../../research/validation/README.md).
 
 Выбор runtime, UI и print format не дублируется здесь: см. ADR-0001—0003.
-

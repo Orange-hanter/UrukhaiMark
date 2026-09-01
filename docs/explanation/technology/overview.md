@@ -116,7 +116,7 @@ flowchart TD
     F -->|пилот| G[Настольная этикетка]
 ```
 
-Матрица решений по SKU: [product-matrix.md](../../reference/product-matrix.md).  
+Матрица решений по SKU: [product-matrix.md](../../reference/product-matrix.md).
 Промышленное нанесение: [industrial-marking.md](industrial-marking.md).
 
 ## Типичные ошибки на старте

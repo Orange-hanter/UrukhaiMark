@@ -21,4 +21,3 @@ FNC1/GS зависит от реального printer toolchain и carrier.
 
 Print port поддерживает независимые adapters. Ни один формат не считается production-
 ready до побайтового scan-back и проверки grade.
-

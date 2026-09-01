@@ -1,6 +1,6 @@
 # Целевая модель данных
 
-> PostgreSQL — system of record одной self-hosted-инсталляции.  
+> PostgreSQL — system of record одной self-hosted-инсталляции.
 > Scope каждой таблицы: `MVP`, `Next` или `Future`.
 
 ## 1. Разделение состояний
@@ -138,4 +138,3 @@ Timeout сохраняет документ как `reconciliation_required`; о
 - `(package_id, active)` для текущего состава;
 - audit/provider history — append-only, базовое хранение ≥ 3 лет;
 - backup raw KM шифруется и проходит регулярный restore test.
-

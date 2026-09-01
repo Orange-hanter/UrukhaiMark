@@ -37,4 +37,3 @@ YYYY-MM-DD
 
 ## Consequences
 ```
-

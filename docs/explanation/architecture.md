@@ -1,6 +1,6 @@
 # Итоговая архитектура UrukhaiMark
 
-> Статус: Approved, Living.  
+> Статус: Approved, Living.
 > Область: self-hosted-система одного предприятия. Разные предприятия не образуют
 > общий tenant или общий runtime.
 
@@ -292,4 +292,3 @@ Runtime, UI и print format остаются Proposed в ADR-0001—0003 и не
 архитектуру. Неподтверждённые регуляторные положения ведутся в
 [architecture-validation.md](../planning/architecture-validation.md), а бизнес-
 блокеры — в [open-questions.md](../planning/open-questions.md).
-

@@ -20,4 +20,3 @@ CLI проще для ранней проверки, Web UI удобнее дл�
 ## Consequences
 
 Acceptance test оператора должен определить CLI-first или Web-first до Milestone 1.5.
-

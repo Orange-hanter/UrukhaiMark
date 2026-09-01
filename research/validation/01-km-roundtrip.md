@@ -19,4 +19,3 @@ assert payload.count("\\u001d") == 2
 
 Результат: **partial pass**. JSON round-trip сохраняет оба GS. Не проверены
 PostgreSQL `BYTEA`, драйвер БД и итоговый encoder; они остаются обязательным P0-тестом.
-

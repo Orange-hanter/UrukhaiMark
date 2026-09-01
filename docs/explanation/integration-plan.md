@@ -1,7 +1,7 @@
 # План интеграции
 
-> Внешние системы, контракты, порядок подключения и обработка ошибок.  
-> API-примеры: [api/cookbook.md](../reference/api/cookbook.md).  
+> Внешние системы, контракты, порядок подключения и обработка ошибок.
+> API-примеры: [api/cookbook.md](../reference/api/cookbook.md).
 > Статусы возможностей: **MVP**, **Next**, **Future**, **Blocked**.
 
 ## 1. Карта интеграций
@@ -74,6 +74,7 @@ All requests: Header Token: {token}
 ```
 
 **UrukhaiMark Auth Service:**
+
 - Refresh за 2 мин до expiry
 - Retry 401 → re-auth once
 - Credentials: env vars `DATAMARK_USER`, `DATAMARK_PASSWORD`, `DATAMARK_BASE_URL`
@@ -144,6 +145,7 @@ UrukhaiMark → datamark /v3/ships/add → автоматическая пере
 ```
 
 **Requirements:**
+
 - `agent` = ID контрагента из `/contracts`
 - `country` = 643
 - `certificate_document_data` заполнен
@@ -178,6 +180,7 @@ UrukhaiMark → datamark /v3/ships/add → автоматическая пере
 | USB HID scanner | COM mode for verification | Optional |
 
 **Print pipeline:**
+
 ```
 KM → DataMatrix PNG → Label template → ZPL → Printer
 ```

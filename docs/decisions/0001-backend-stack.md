@@ -20,4 +20,3 @@ worker и PostgreSQL; выбор зависит от проверенного Da
 ## Consequences
 
 Логическая архитектура и порты не зависят от runtime. Scaffold блокирован до выбора.
-

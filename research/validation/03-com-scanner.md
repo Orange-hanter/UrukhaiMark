@@ -15,4 +15,3 @@
 
 Контракт драйвера должен возвращать raw bytes, device ID, timestamp и quality/grade,
 если устройство их предоставляет.
-

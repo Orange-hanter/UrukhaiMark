@@ -1,7 +1,7 @@
 # План выполнения работ
 
 > WBS, deliverables, роли и контрольные точки проекта UrukhaiMark. Порядок
-> capability slices определяет [roadmap.md](roadmap.md).  
+> capability slices определяет [roadmap.md](roadmap.md).
 > Связанные документы: [architecture.md](../explanation/architecture.md),
 > [integration-plan.md](../explanation/integration-plan.md) и
 > [architecture-validation.md](architecture-validation.md).
