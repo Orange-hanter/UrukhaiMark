@@ -4,10 +4,10 @@
 
 **Маркировка товаров из Беларуси — от заказа кодов до экспорта в РФ**
 
-[![Status](https://img.shields.io/badge/status-planning-blue?style=flat-square)](docs/ROADMAP.md)
+[![Status](https://img.shields.io/badge/status-planning-blue?style=flat-square)](docs/planning/roadmap.md)
 [![Docs](https://img.shields.io/badge/docs-49%20files-green?style=flat-square)](docs/README.md)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-orange?style=flat-square)](LICENSE)
-[![DataMatrix](https://img.shields.io/badge/format-GS1%20DataMatrix-6c5ce7?style=flat-square)](docs/datamatrix-spec.md)
+[![DataMatrix](https://img.shields.io/badge/format-GS1%20DataMatrix-6c5ce7?style=flat-square)](docs/reference/datamatrix-spec.md)
 
 *ГИС «Электронный знак» · datamark.by · GS1 DataMatrix · «Честный знак» РФ*
 
@@ -54,15 +54,15 @@ flowchart LR
     Reports --> EZ
 ```
 
-Подробнее: [архитектура](docs/architecture.md) · [матрица товаров](docs/product-matrix.md)
+Подробнее: [архитектура](docs/explanation/architecture.md) · [матрица товаров](docs/reference/product-matrix.md)
 
 ## Быстрый старт
 
-1. [Глоссарий](docs/glossary.md) — КМ, СИ, УКЗ, DataMatrix
-2. [Матрица товаров](docs/product-matrix.md) — режим маркировки для вашего SKU
-3. [Регистрация](docs/processes/registration.md) — GS1, ePASS, «Электронный знак»
-4. [Экспорт освежителей в РФ](docs/processes/export-rf-cosmetics.md)
-5. [Дорожная карта](docs/ROADMAP.md) — фазы и критерии готовности
+1. [Глоссарий](docs/reference/glossary.md) — КМ, СИ, УКЗ, DataMatrix
+2. [Матрица товаров](docs/reference/product-matrix.md) — режим маркировки для SKU
+3. [Регистрация](docs/tutorials/registration.md) — GS1, ePASS, «Электронный знак»
+4. [Экспорт освежителей в РФ](docs/how-to/export-rf-cosmetics.md)
+5. [Дорожная карта](docs/planning/roadmap.md) — capability slices и gates
 
 ## Документация
 
@@ -70,23 +70,26 @@ flowchart LR
 
 | Раздел | Ключевые документы |
 |--------|-------------------|
-| **Планирование** | [ROADMAP](docs/ROADMAP.md) · [Мастер-план](docs/plan.md) · [Открытые вопросы](docs/open-questions.md) |
-| **Предметная область** | [Глоссарий](docs/glossary.md) · [Нормативная база](docs/regulatory.md) · [Матрица SKU](docs/product-matrix.md) |
-| **Процессы** | [Регистрация](docs/processes/registration.md) · [Экспорт РФ](docs/processes/export-rf-cosmetics.md) · [Пиво РБ](docs/processes/domestic-rb-beer.md) |
-| **Нанесение кодов** | [Промышленное inline](docs/technology/industrial-marking.md) · [Упаковка](docs/technology/packaging-carriers.md) · [Оборудование](docs/technology/equipment.md) · [Качество](docs/technology/quality-control.md) |
-| **Техника** | [DataMatrix](docs/datamatrix-spec.md) · [API Cookbook](docs/api/cookbook.md) · [API Reference](docs/api/reference.md) · [Troubleshooting](docs/troubleshooting.md) |
-| **Разработка** | [Архитектура](docs/architecture.md) · [Модель данных](docs/plans/data-model.md) · [План тестирования](docs/plans/testing-plan.md) |
+| **Планирование** | [Roadmap](docs/planning/roadmap.md) · [Validation](docs/planning/architecture-validation.md) · [Открытые вопросы](docs/planning/open-questions.md) |
+| **Предметная область** | [Глоссарий](docs/reference/glossary.md) · [Нормативная база](docs/reference/regulatory.md) · [Матрица SKU](docs/reference/product-matrix.md) |
+| **Процессы** | [Регистрация](docs/tutorials/registration.md) · [Экспорт РФ](docs/how-to/export-rf-cosmetics.md) · [Пиво РБ](docs/how-to/domestic-rb-beer.md) |
+| **Нанесение кодов** | [Промышленное inline](docs/explanation/technology/industrial-marking.md) · [Упаковка](docs/explanation/technology/packaging-carriers.md) · [Оборудование](docs/explanation/technology/equipment.md) · [Качество](docs/how-to/quality-control.md) |
+| **Техника** | [DataMatrix](docs/reference/datamatrix-spec.md) · [API Cookbook](docs/reference/api/cookbook.md) · [API Reference](docs/reference/api/reference.md) · [Troubleshooting](docs/how-to/troubleshooting.md) |
+| **Разработка** | [Архитектура](docs/explanation/architecture.md) · [Модель данных](docs/reference/data-model.md) · [ADR](docs/decisions/README.md) |
 
 ## Дорожная карта
 
-| Фаза | Срок | Цель |
-|------|------|------|
-| **0** | 1–2 нед. | Регистрация, sandbox API, классификация SKU |
-| **1** | 3–4 нед. | MVP: освежители → экспорт РФ (end-to-end) |
-| **2** | 2–3 нед. | Продакшен, мониторинг, печать |
-| **3** | TBD | Пиво (УКЗ), расширение товарных групп |
+| Slice | Цель |
+|-------|------|
+| **0** | Architecture validation, доступы и SKU |
+| **1** | MVP: cosmetics → РФ, API/compliance |
+| **2** | Надёжная печать и production hardening |
+| **3** | Одна автоматизированная линия |
+| **4–5** | Короба, палеты и склад |
+| **6** | Multi-line edge |
+| **7** | ERP, ЭДО и дополнительные providers |
 
-Детали: [`docs/ROADMAP.md`](docs/ROADMAP.md)
+Детали: [`docs/planning/roadmap.md`](docs/planning/roadmap.md)
 
 ## Статус
 
